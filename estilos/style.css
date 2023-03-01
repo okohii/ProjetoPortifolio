@@ -1,47 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
 img {
     border-radius: 50%;
 }
 
-body {
-    padding: 0;
-    margin: 0;
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-
-.Foto {
-    display: grid;
-    justify-content: center;
-    background-image: url(/imagens/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-width: 100%;
-    max-height: 100%;
+.icone{
+    max-width: 70px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+    box-shadow: 0px 11px 50px rgba(0, 0, 0, 0.25);
 }
 
-.header-container {
-    display: grid;
-    place-items: center;
-    background-color: blueviolet;
+.cabecalho-menu{
+    display: flex;
+    gap: 30px;
 }
 
-.header {
+.cabecalho-menu-item{
+    border-radius: 20%;
     color: white;
-}
-
-#exp, #soft {
-    display: grid;
-    place-items: center;
+    font-family: kanit;
+    font-weight: 400;
     font-size: 20px;
+    box-shadow: 0px 11px 50px rgba(0, 0, 0, 0.25);
 }
 
-#exp {
-    margin-top: 70px;
-
+.conteudo{
+    border-top: solid 0.4px white;
+    margin-bottom: 50px;
 }
 
-#nome {
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.conteudo-principal-escrito-titulo{
     display: grid;
     place-items: center;
-    font-size: 25px;
-    margin: 0 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 70px;
+    font-family: kanit;
+    font-weight: 600;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: kanit;
+    font-weight: 300;
+}
+
+.perfil{
+    box-shadow: -11px 10px 6px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.conteudo-secundario-escrito{
+    display: grid;
+    place-items: center;
+}
+
+.conteudo-secundario-escrito-titulo{
+    padding-top: 30px;
+    border-top: solid 0.4px white;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: kanit;
+}
+
+.conteudo-secundario-escrito-subtitulo{
+    font-weight: 200;
+    font-family: kanit;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.conteudo-terciario{
+    display: flex;
+    flex-direction: row;
+    border-top: solid 0.4px white;
+    padding-top: 50px;
+    font-family: kanit;
+    color: white;
+    gap: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.exp-titulo, .soft-titulo, .ptsfracos-titulo{
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.exp-conteudo, .soft-conteudo, .ptsfracos-conteudo{
+    display: grid;
+    place-items: center;
+}
+
+.whatsapp-imagem, .email-imagem{
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 0.4px white;
+    color: white;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.whatsapp-conteudo{
+    border-right: solid 1px white;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.email-conteudo{
+    margin-bottom: 50px;
 }
